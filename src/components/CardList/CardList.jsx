@@ -1,10 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
-import "./CardList.css";
 
 const CardList = ({ cards }) => {
   return (
-    <div className="card-list">
+    <div className="flex flex-wrap gap-4 justify-center">
       {cards.map((card) => (
         <Card key={card.id} {...card} />
       ))}
